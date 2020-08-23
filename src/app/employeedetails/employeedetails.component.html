@@ -1,0 +1,26 @@
+<h2>Employee Details</h2> 
+<hr/>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>EmployeeId</th>
+        <th>FirstName</th>
+        <th>Lastname</th>
+        <th>EmailId</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="employee">
+          <td>{{employee.id}}</td>
+          <td>{{employee.firstName}}</td>
+          <td>{{employee.lastName}}</td>
+          <td>{{employee.emailId}}</td>
+          </tr>
+          <button (click)="list()" class="btn btn-primary">Back to Employee List</button>
+        </tbody>
+      </table>
+      
+    
+          
